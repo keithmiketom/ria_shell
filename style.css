@@ -1,0 +1,110 @@
+
+h1{
+    color:red;
+    font-family:sketchetik;
+    font-size:5em;
+}
+div{
+    font-family:sans-serif;
+}
+ul{
+    list-style:none;
+    font-family:sans-serif;
+}
+li {
+    border:1px solid magenta;
+    width:200px;
+    cursor:pointer;
+    text-align:center;
+    margin-bottom:10px;
+	padding:5px 10px;
+    background-color:yellow;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+li:hover{
+    border:1px solid yellow;
+    background-color:magenta;
+    color:white;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#question{
+	width:300px;
+	margin:-100px 0 0;
+	background-color:#36F;
+	    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+	border:2px solid #008;
+	padding:15px;
+	font:sans-serif 1.2em;
+	color:white;
+	}
+
+#score {
+    padding:30px;
+	margin:-100px 0 0;
+    background-color:#36F;
+    float:right;
+    width:250px;
+    border:3px solid #008;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color:white;
+    font-size:7em;
+    text-align:right;
+}
+
+#countdown{
+    position:relative;
+    top:-160px;
+    right:-630px;
+    padding:20px;
+    width:50px;
+    height:50px;
+    font-size:3em;
+    text-align:right;
+    border-radius: 20px;
+	background-color:#36F;
+    border:3px solid #008;
+	color:white;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+div.quiz{
+    width:750px;
+	min-height:500px;
+	padding:20px;
+    margin: 0 auto;
+	border-radius: 40px;
+	background-color:#09F;
+    border:3px solid #008;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+#progressBar{
+	border-radius:50px;
+	width:500px;
+	height:75px;
+	border:1px solid green;
+	background-color:hsla(240, 100% 20%, 0.8);}

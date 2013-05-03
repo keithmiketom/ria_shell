@@ -1,0 +1,213 @@
+@import url('normalize.css');
+/*@import url('foundation.min.css');*/
+@import url('alertify.core.css');
+
+header{
+	width:100%;
+	background-color:hsla(330, 80%, 70%, 0.8);
+	height:200px;
+	margin-top:-30px;
+	border-bottom:10px solid hsla(340, 50%, 50%, 1.0);}
+header h2{
+	font-family: sans-serif;
+	font-size:2em;
+	margin-top:20px;}
+	
+nav ul{
+	list-style:none;
+	}
+nav li{
+	float:left;
+	padding:20px;
+	background-color:hsla(220, 80%, 60%, 0.8);
+	}
+
+body{
+	font-family: 'Open Sans Condensed','Arial Narrow', serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-smoothing: antialiased;}
+	
+
+	
+.content img{
+	border-radius:8px;
+	float:left;
+	}
+
+.tabs {
+    position: relative;
+	margin: 40px auto;
+	width: 1050px;
+}
+
+.tabs input {
+	position: absolute;
+	z-index: 1000;
+	width: 80px;
+	height: 40px;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+	cursor:pointer;
+}
+
+.tabs label {
+	background: #69F;
+	background: -moz-linear-gradient(top, #69F 0%, #007 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#69F), color-stop(100%,#007));
+	background: -webkit-linear-gradient(top, #69F 0%,#007 100%);
+	background: -o-linear-gradient(top, #69F 0%,#007 100%);
+	background: -ms-linear-gradient(top, #69F 0%,#007 100%);
+	background: linear-gradient(top, #69F 0%,#007 100%);
+	font-size: 0.8em;
+	line-height: 40px;
+	height: 40px;
+	position: relative;
+	padding: 0 20px;
+    float: left;
+	display: block;
+	width: 80px;
+	color: #fff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
+    border-radius: 8px 8px 0 0;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.1), -2px 0 2px rgba(0,0,0,0.1);
+}
+
+.tabs label:after {
+    content: '';
+	background: #fff;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	display: block;
+}
+
+.tabs input:hover + label {
+	background: #69F;
+}
+
+.tabs label:first-of-type {
+    z-index: 10;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.1);
+}
+.tab-label-1 {
+    z-index: 8;}
+.tab-label-2 {
+    z-index: 7;
+}
+
+.tab-label-3 {
+    z-index: 6;
+}
+
+.tab-label-4 {
+    z-index: 5;
+}
+.tab-label-5 {
+    z-index: 4;
+}
+
+.tab-label-6 {
+    z-index: 3;
+}
+
+.tab-label-7 {
+    z-index: 2;
+}
+.tab-label-8 {
+    z-index: 1;
+}
+
+.tabs input:checked + label {
+    background:#69F;
+	z-index: 10;
+}
+
+.clear-shadow {
+	clear: both;
+}
+
+.content {
+    background-image:url(../img/lvucits.png);
+	background-color:hsla(120, 0%, 100% 0.4);
+	position: relative;
+    width: 100%;
+	height: 600px;
+	z-index: 5;
+    box-shadow: 0 -2px 3px -2px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.1);
+    border-radius: 0 8px 8px 8px;
+}
+
+.content div {
+    position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 40px;
+	z-index: 1;
+    opacity: 0;
+
+    -webkit-transition: opacity linear 0.1s;
+    -moz-transition: opacity linear 0.1s;
+    -o-transition: opacity linear 0.1s;
+    -ms-transition: opacity linear 0.1s;
+    transition: opacity linear 0.1s;
+}
+
+.tabs input.tab-selector-1:checked ~ .content .content-1,
+.tabs input.tab-selector-2:checked ~ .content .content-2,
+.tabs input.tab-selector-3:checked ~ .content .content-3,
+.tabs input.tab-selector-4:checked ~ .content .content-4,
+.tabs input.tab-selector-5:checked ~ .content .content-5,
+.tabs input.tab-selector-6:checked ~ .content .content-6,
+.tabs input.tab-selector-7:checked ~ .content .content-7,
+.tabs input.tab-selector-8:checked ~ .content .content-8{
+	z-index: 100;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+
+    -webkit-transition: opacity ease-out 0.2s 0.1s;
+    -moz-transition: opacity ease-out 0.2s 0.1s;
+    -o-transition: opacity ease-out 0.2s 0.1s;
+    -ms-transition: opacity ease-out 0.2s 0.1s;
+    transition: opacity ease-out 0.2s 0.1s;
+}
+.content div h2,
+.content div h3{
+	color: #69F;
+}
+.content div p {
+	font-size: 1.0em;
+	line-height: 1.8em;
+	text-align: left;
+	margin: 0;
+	color: #777;
+	padding-left: 15px;
+	font-family: Cambria, Georgia, serif;
+	border-left: 8px solid rgba(0,15,105, 0.2);
+}
+
+.defs{
+	float:left;
+	list-style:none;
+	font-size:1.6em;
+	}
+.content h3, .content p{
+	clear:both;}
+	
+.red{
+	width:150px;
+	height:150px;
+	background-color:red;}
